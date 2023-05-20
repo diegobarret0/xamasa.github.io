@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav{
+    font-size:150%;
+    font: bold;
+    background-color: white;
+}
+
+.xama-logo-toolbar{
+    height: 3rem;
+    width: 3rem;
+}
+
+.carousel-caption{
+    bottom: 40%;
+    font-size: larger;
+}
+
+.carousel-caption p{
+    margin: auto;
+    color: white;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-inner img{
+    height: 100%;
+}
+
+.aboutUs{
+    display: flex;
+    background: url(../images/modern-home-design-exterior-stained-glass-square-shapes-cubes.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.aboutUs::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.aboutUs div{
+    position: relative;
+    color: white;
+    width: 60%;
+    font-size: xx-large;
+    font-weight: 500;
+    margin: auto;
+}
+.aboutUs h1,p{
+    text-align: center;
+}
+
+.contactRow{
+    background-color: #ADB5BD;
+    border-radius: 1rem;
+}
+
+.products{
+    background: url(../images/2021-01-11-12-33-44-1536x1024.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.products::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.products div{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    width: 25%;
+    height: 40%;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+.products .imagen{
+    width: 100%;
+    height: 50%;
+}
+
+.products img{
+    border-radius: 1rem;;
+    width: 100%;
+    height: 100%;
+}
+
+.products div h2{
+    margin: auto;
+}
+
+.products div{
+    height: 50%;
+}
+.products p{
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+.form-body{
+    background-image: url(../images/smart-home.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.form-body::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.form-body .container{
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.contactBody .container{
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.error{
+    color: rgb(229, 122, 122);
+}
+
+.carousel-inner .carousel-caption{
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 1rem;
+}
+
+.carousel-inner p{
+    font-size: xx-large;
+}
+
+.carousel-caption h5{
+    /*color: rgb(94, 94, 232);*/
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.contactBody{
+    background: url(../images/photo-1600585154340-be6161a56a0c.jpg);
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.contactBody::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+@media screen and (max-width:930px){
+    .aboutUs div{
+        width: 0%;
+        font-size:medium;
+        font-weight: 400;
+        margin-top: 5rem;
+    }
+    
+    .products{ 
+        margin-top: 5rem;    
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .products div{
+        width: 80%;
+        height: 30%;
+    }
+    .products div h2{
+        font-size: larger;
+    }
+
+    .products div p{
+        font-size: large;
+    }
+    
+
+    .carousel-inner p{
+        font-size:large;
+        color: white;
+        font-weight: bold;
+    }
+
+    .carousel-inner h5{
+        font-size: larger;
+    }
+}
+
+@media screen and (min-width:930px){
+    .forms .form-label,.error,::placeholder,.form-control, .btn{
+        font-size: xx-large;
+    }
+
+    .navbar-nav a{
+        font-size: x-large;
+        font-weight: bolder;
+        color: rgb(76, 73, 73);
+    }
+}
